@@ -1,3 +1,2 @@
 
-<img width="1762" height="798" alt="dsd 33" src="https://github.com/user-attachments/assets/88a2cd48-eeb0-41f9-950f-8d2a64a27ae7" />
-practical 1.2
+![WhatsApp Image 2025-08-04 at 15 55 04_361c6d54](https://github.com/user-attachments/assets/f5aff6b4-60d3-4960-9801-06fb99591846)
