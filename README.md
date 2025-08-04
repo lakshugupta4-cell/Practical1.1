@@ -1,2 +1,2 @@
-<img width="1076" height="459" alt="Screenshot 2025-08-04 151521" src="https://github.com/user-attachments/assets/ba14127a-db88-400a-940d-ea4c86f96363" />
-# Practical1.1
+
+<img width="1762" height="798" alt="dsd 33" src="https://github.com/user-attachments/assets/88a2cd48-eeb0-41f9-950f-8d2a64a27ae7" />
