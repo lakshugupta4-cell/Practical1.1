@@ -1,23 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banking Dashboard</title>
+  <style>
+    :root {
+      --primary-color: #0047ab;
+      --accent-color: #f4f6f8;
+      --card-color: #ffffff;
+      --text-color: #333;
+      --border-radius: 12px;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--accent-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #003080;
+      padding: 10px;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card-color);
+      padding: 20px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .balance {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .transactions {
+      margin-top: 20px;
+    }
+
+    .transactions h4 {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .transaction {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .transaction:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 500px) {
+      header {
+        font-size: 1.5rem;
+      }
+
+      .balance {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Student Regitration form</h1>
-<form action="/submit" method="post">
- <label for="name">name:</label><br>
- <input type="text" id="name" name="name"><br><br>
 
- <label for="email">Email:</label><br>
- <input type="email" id="email" name="email"><br><br>
+  <header>
+    MyBank Dashboard
+  </header>
 
- <label for="age">age:</label><br>
- <input type="number" id="age" name="age"><br><br>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Accounts</a>
+    <a href="#">Transfers</a>
+    <a href="#">Settings</a>
+  </nav>
 
- <input type="submit" value="Register">
-</form>
+  <div class="container">
+    <div class="card">
+      <h3>Checking Account</h3>
+      <div class="balance">$5,300.75</div>
+      <p>Account No: 1234567890</p>
+    </div>
+
+    <div class="card">
+      <h3>Savings Account</h3>
+      <div class="balance">$12,800.00</div>
+      <p>Account No: 0987654321</p>
+    </div>
+
+    <div class="card transactions">
+      <h4>Recent Transactions</h4>
+      <div class="transaction">
+        <span>Grocery Store</span>
+        <span>-$55.23</span>
+      </div>
+      <div class="transaction">
+        <span>Salary</span>
+        <span>+$2,000.00</span>
+      </div>
+      <div class="transaction">
+        <span>Electricity Bill</span>
+        <span>-$120.45</span>
+      </div>
+      <div class="transaction">
+        <span>Mobile Recharge</span>
+        <span>-$18.00</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 MyBank. All rights reserved.
+  </footer>
+
 </body>
 </html>
